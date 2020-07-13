@@ -11,10 +11,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  eva_icons_flutter: ">=2.0.0"
-
-
-
+  eva_icons_flutter: ^2.0.0
+  slide_digital_clock: ^1.0.0
   cupertino_icons: ^0.1.3
 
 dev_dependencies:

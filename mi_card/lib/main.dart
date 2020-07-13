@@ -1,15 +1,22 @@
 import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
+import 'package:slide_digital_clock/slide_digital_clock.dart';
 
 void main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
+  @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.deepPurple[400],
         body: SafeArea(
@@ -119,6 +126,19 @@ class MyApp extends StatelessWidget {
                         fontFamily: 'SourceSansPro',
                         fontSize: 15.0),
                   ),
+                ),
+              ),
+              Card(
+                color: Colors.black,
+                child: DigitalClock(
+                  areaDecoration: BoxDecoration(color: Colors.transparent),
+                  hourMinuteDigitDecoration: BoxDecoration(
+                      color: Colors.transparent, shape: BoxShape.rectangle),
+                  is24HourTimeFormat: false,
+                  amPmDigitTextStyle: TextStyle(color: Colors.white),
+                  secondDigitTextStyle: TextStyle(color: Colors.white),
+                  secondDigitDecoration: BoxDecoration(
+                      color: Colors.transparent, shape: BoxShape.rectangle),
                 ),
               ),
             ],
