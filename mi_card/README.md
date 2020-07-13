@@ -16,4 +16,4 @@ For help getting started with Flutter, view our
 samples, guidance on mobile development, and a full API reference.
 
 ### Screenshot
-![Screenshot of desktop contact card](/images/contact-card-screenshot.png)
+![Screenshot of desktop contact card](/mi_card/images/contact-card-screenshot.png)
