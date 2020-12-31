@@ -26,7 +26,7 @@ class _MyAppState extends State<MyApp> {
               CircleAvatar(
                 radius: 50.0,
                 backgroundColor: Colors.red,
-                backgroundImage: AssetImage('images/myImage.JPG'),
+                backgroundImage: AssetImage('images/Me:).jpg'),
               ),
               Text(
                 'Hafeez Arfi',
@@ -38,7 +38,7 @@ class _MyAppState extends State<MyApp> {
                 ),
               ),
               Text(
-                'FLUTTER DESIGNER(UI/UX)',
+                'FLUTTER DEVELOPER',
                 style: TextStyle(
                     fontSize: 20.0,
                     fontFamily: 'SourceSansPro',
